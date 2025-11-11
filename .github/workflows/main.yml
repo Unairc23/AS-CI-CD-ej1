@@ -4,7 +4,7 @@ on: push
 
 jobs:
   validar:
-    runs-on: ubuntu-talest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Bajar codigo
