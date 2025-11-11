@@ -1,0 +1,17 @@
+name: prueba_ej1
+
+on: push
+
+jobs:
+  validar:
+    runs-on: ubuntu-talest
+
+    steps:
+      - name: Bajar codigo
+        run: actions/checkout@v5
+
+      - name: Instalar pytest
+        run: pip install pytest
+
+      - name: Ejecutar test
+        run: pytest test.py
